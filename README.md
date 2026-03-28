@@ -1,3 +1,13 @@
+# SOC Detection Lab: Credential Compromise & Privilege Escalation
+
+This project demonstrates detection of a real-world attack chain using Wazuh SIEM:
+
+Brute Force → Successful Login → Privilege Escalation
+
+Custom correlation rules were engineered to detect and escalate this multi-stage attack using Windows Security Event Logs (4625, 4624, 4732).
+
+This lab showcases hands-on SOC analyst skills including alert triage, log correlation, and incident timeline reconstruction.
+
 # Home SOC Lab – Detection Engineering with Wazuh
 
 ## Overview
@@ -342,3 +352,51 @@ This lab provided practical experience in:
 * Mapping detections to MITRE ATT&CK techniques
 
 The project demonstrates how authentication telemetry can be transformed into meaningful detections through structured correlation logic.
+
+---
+
+# 📸 Visual Evidence
+
+## Lab Setup
+
+![Windows VM](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/01.windows-vm.png)
+
+![Ubuntu VM](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/02.ubuntu-vm.png)
+
+![Windows IP](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/03.windows-ip.png)
+
+![Ubuntu IP](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/04.ubuntu-ip.png)
+
+![VM Connectivity](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/05.vms-connectivity.png)
+
+---
+
+## SIEM Deployment
+
+![Wazuh Manager Status](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/06.wazuh-manager-status.png)
+
+![Indexer & Dashboard](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/07.indexer-dashboard-status.png)
+
+![Agent Connected](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/08.wazuh-agent-active.png)
+
+---
+
+## Detection Rules
+
+![Custom Detection Rules](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/09.detection-rule.png)
+
+---
+
+## Windows Event Logs
+
+![Windows Event Viewer](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/10.windows-event-viewer.png)
+
+![Event IDs](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/11.event-ids.png)
+
+---
+
+## Alerts Triggered
+
+![Rule 100010 - Credential Compromise](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/12.ruleid-100010.png)
+
+![Rule 100020 - Privilege Escalation](https://github.com/TheCipherNova/home-soc-wazuh-detection-lab/raw/main/screenshots/13.ruleid-100020.png)
