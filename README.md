@@ -16,8 +16,6 @@ This lab showcases hands-on SOC analyst skills including alert triage, log corre
 - Multi-stage attack correlation using Wazuh SIEM rules
 - MITRE ATT&CK mapping (T1110, T1078, T1098, T1068)
 
-# Home SOC Lab – Detection Engineering with Wazuh
-
 ## Overview
 
 This project demonstrates a simulated credential compromise scenario within a **home Security Operations Center (SOC) lab** using **Wazuh SIEM**.
