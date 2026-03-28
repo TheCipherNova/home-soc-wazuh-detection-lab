@@ -8,6 +8,14 @@ Custom correlation rules were engineered to detect and escalate this multi-stage
 
 This lab showcases hands-on SOC analyst skills including alert triage, log correlation, and incident timeline reconstruction.
 
+## Key Detection Capabilities
+
+- Brute-force attack detection (Event ID 4625)
+- Credential compromise detection via login correlation (4624)
+- Privilege escalation detection using group modification events (4732)
+- Multi-stage attack correlation using Wazuh SIEM rules
+- MITRE ATT&CK mapping (T1110, T1078, T1098, T1068)
+
 # Home SOC Lab – Detection Engineering with Wazuh
 
 ## Overview
